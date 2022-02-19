@@ -20,5 +20,15 @@ rm -vf ${HOME}/.aws/credentials
 ```
 - Check that Cloud9 IDE is using the correct IAM Role
 ```
-aws sts get-caller-identity --query Arn | grep eksworkspace-admin
+aws sts get-caller-identity --query Arn | grep eks-admin
+```
+
+### AWS CLI
+#### Update AWS CLI
+```
+sudo pip install --upgrade awscli
+```
+#### check the version
+```
+aws --version
 ```
