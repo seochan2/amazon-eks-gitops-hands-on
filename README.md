@@ -44,3 +44,9 @@ sudo curl -o /usr/local/bin/kubectl  \
 ```
 sudo chmod +x /usr/local/bin/kubectl
 ```
+
+### etc
+#### Install jq
+```
+sudo yum install -y jq
+```
