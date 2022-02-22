@@ -50,3 +50,7 @@ sudo chmod +x /usr/local/bin/kubectl
 ```
 sudo yum install -y jq
 ```
+#### Install bash-completion
+```
+sudo yum install -y bash-completion
+```
