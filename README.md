@@ -61,3 +61,7 @@ sudo yum install -y bash-completion
 ```
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 ```
+- Move the binary to the location /usr/local/bin
+```
+sudo mv -v /tmp/eksctl /usr/local/bin
+```
