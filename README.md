@@ -65,3 +65,7 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 ```
 sudo mv -v /tmp/eksctl /usr/local/bin
 ```
+- check the installation
+```
+eksctl version
+```
