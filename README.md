@@ -69,3 +69,13 @@ sudo mv -v /tmp/eksctl /usr/local/bin
 ```
 eksctl version
 ```
+
+### AWS Cloud9 Additional Settings
+#### Set default value to AWS Region
+```
+export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
+
+echo "export AWS_REGION=${AWS_REGION}" | tee -a ~/.bash_profile
+    
+aws configure set default.region ${AWS_REGION}
+```
