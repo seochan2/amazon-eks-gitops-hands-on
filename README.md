@@ -79,3 +79,9 @@ echo "export AWS_REGION=${AWS_REGION}" | tee -a ~/.bash_profile
     
 aws configure set default.region ${AWS_REGION}
 ```
+#### Register the account ID 
+```
+export ACCOUNT_ID=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.accountId')
+
+echo "export ACCOUNT_ID=${ACCOUNT_ID}" | tee -a ~/.bash_profile
+```
