@@ -6,11 +6,14 @@
 #### IDE configuration with AWS Cloud9
 - Cloud9 console > Create environment > platform : Amazon Linux 2
 - Create in a public subnet
+
 #### Create IAM Role
 - Create an IAM Role with Administrator access
+
 #### Grant IAM Role to an AWS Cloud9 instance
 - EC2 instnace console > Select AWS Cloud9 instance, Actions > Security > Modify IAM Role
 - Change IAM role
+
 #### Update IAM settings in IDE
 - Disable AWS Cloud9 credentials. After that attach the IAM Role(because they are not compatible with EKS IAM authentication)
 - Cloud9 IDE > AWS SETTINGS in the sidebar > Credentials > Disable the AWS managed temperature credits 
@@ -85,3 +88,13 @@ export ACCOUNT_ID=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/doc
 
 echo "export ACCOUNT_ID=${ACCOUNT_ID}" | tee -a ~/.bash_profile
 ```
+
+## Container Image
+### Upload container image to Amazon ECR
+#### Create Amazon ECR Repository and Upload Image
+- Download the source code to be containerized 
+```
+git clone https://github.com/joozero/amazon-eks-flask.git
+``` 
+
+
