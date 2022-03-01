@@ -97,4 +97,10 @@ echo "export ACCOUNT_ID=${ACCOUNT_ID}" | tee -a ~/.bash_profile
 git clone https://github.com/joozero/amazon-eks-flask.git
 ``` 
 
-
+#### Create an image repository
+```
+aws ecr create-repository \
+--repository-name demo-flask-backend \
+--image-scanning-configuration scanOnPush=true \
+--region ${AWS_REGION}
+```
