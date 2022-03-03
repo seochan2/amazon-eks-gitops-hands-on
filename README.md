@@ -104,3 +104,8 @@ aws ecr create-repository \
 --image-scanning-configuration scanOnPush=true \
 --region ${AWS_REGION}
 ```
+
+#### Bring the authentication token and push the container image to the repository
+```
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.ap-northeast-2.amazonaws.com
+```
