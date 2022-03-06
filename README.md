@@ -116,3 +116,8 @@ cd ~/environment/amazon-eks-flask
 
 docker build -t demo-flask-backend .
 ```
+
+#### Enable a docker image tag
+```
+docker tag demo-flask-backend:latest $ACCOUNT_ID.dkr.ecr.ap-northeast-2.amazonaws.com/demo-flask-backend:latest
+```
