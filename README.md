@@ -121,3 +121,8 @@ docker build -t demo-flask-backend .
 ```
 docker tag demo-flask-backend:latest $ACCOUNT_ID.dkr.ecr.ap-northeast-2.amazonaws.com/demo-flask-backend:latest
 ```
+
+#### Push the image into the repository
+```
+docker push $ACCOUNT_ID.dkr.ecr.ap-northeast-2.amazonaws.com/demo-flask-backend:latest
+```
