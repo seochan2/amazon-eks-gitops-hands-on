@@ -164,3 +164,8 @@ cloudWatch:
     enableTypes: ["*"]
 EOF
 ```
+
+#### Deploy the cluster
+```
+eksctl create cluster -f eks-demo-cluster.yaml
+```
