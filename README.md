@@ -169,3 +169,8 @@ EOF
 ```
 eksctl create cluster -f eks-demo-cluster.yaml
 ```
+
+#### Check that the node is properly deployed.
+```
+kubectl get nodes 
+```
