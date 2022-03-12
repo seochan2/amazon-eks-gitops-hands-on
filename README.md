@@ -174,3 +174,13 @@ eksctl create cluster -f eks-demo-cluster.yaml
 ```
 kubectl get nodes 
 ```
+
+## reate Ingress Controller
+### Create AWS Load Balancer Controller
+#### Create a folder named manifests 
+- /home/ec2-user/environment/manifests/alb-ingress-controller
+```
+cd ~/environment
+
+mkdir -p manifests/alb-ingress-controller && cd manifests/alb-ingress-controller
+```
