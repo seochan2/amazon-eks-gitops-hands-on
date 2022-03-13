@@ -99,10 +99,7 @@ git clone https://github.com/joozero/amazon-eks-flask.git
 
 #### Create an image repository
 ```
-aws ecr create-repository \
---repository-name demo-flask-backend \
---image-scanning-configuration scanOnPush=true \
---region ${AWS_REGION}
+aws ecr create-repository --repository-name demo-flask-backend --image-scanning-configuration scanOnPush=true --region ${AWS_REGION}
 ```
 
 #### Bring the authentication token and push the container image to the repository
@@ -183,4 +180,9 @@ kubectl get nodes
 cd ~/environment
 
 mkdir -p manifests/alb-ingress-controller && cd manifests/alb-ingress-controller
+```
+
+#### Create IAM OpenID Connect (OIDC) identity provider for the cluster
+```
+eksctl utils associate-iam-oidc-provider --region ${AWS_REGION} --cluster eks-demo --approve
 ```
