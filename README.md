@@ -172,7 +172,7 @@ eksctl create cluster -f eks-demo-cluster.yaml
 kubectl get nodes 
 ```
 
-## reate Ingress Controller
+## Create Ingress Controller
 ### Create AWS Load Balancer Controller
 #### Create a folder named manifests 
 - /home/ec2-user/environment/manifests/alb-ingress-controller
@@ -185,4 +185,10 @@ mkdir -p manifests/alb-ingress-controller && cd manifests/alb-ingress-controller
 #### Create IAM OpenID Connect (OIDC) identity provider for the cluster
 ```
 eksctl utils associate-iam-oidc-provider --region ${AWS_REGION} --cluster eks-demo --approve
+```
+
+#### Create an IAM Policy to grant to the AWS Load Balancer Controller
+```
+aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy \
+    --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 ```
