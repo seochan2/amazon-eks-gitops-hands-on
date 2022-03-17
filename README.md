@@ -203,3 +203,8 @@ eksctl create iamserviceaccount \
     --override-existing-serviceaccounts \
     --approve
 ```
+
+#### Add AWS Load Balancer controller to the cluster
+```
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.4.1/cert-manager.yaml
+```
