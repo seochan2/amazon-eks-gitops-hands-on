@@ -208,3 +208,8 @@ eksctl create iamserviceaccount \
 ```
 kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.4.1/cert-manager.yaml
 ```
+
+#### Download Load balancer controller yaml file
+```
+wget https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.2.1/docs/install/v2_2_1_full.yaml
+```
