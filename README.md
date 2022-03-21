@@ -214,7 +214,7 @@ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/relea
 wget https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.2.1/docs/install/v2_2_1_full.yaml
 ```
 
-### In yaml file, edit cluster-name to eks-demo
+#### In yaml file, edit cluster-name to eks-demo
 ```
 spec:
     containers:
@@ -222,4 +222,17 @@ spec:
         - --cluster-name=eks-demo # Insert EKS cluster that you created
         - --ingress-class=alb
         image: amazon/aws-alb-ingress-controller:v2.2.1
+```
+
+#### Remove the ServiceAccount yaml spec written in the yaml file
+```
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/name: aws-load-balancer-controller
+  name: aws-load-balancer-controller
+  namespace: kube-system
 ```
