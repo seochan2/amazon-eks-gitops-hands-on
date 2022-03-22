@@ -236,3 +236,8 @@ metadata:
   name: aws-load-balancer-controller
   namespace: kube-system
 ```
+
+#### Deploy AWS Load Balancer controller file
+```
+kubectl apply -f v2_2_1_full.yaml
+```
