@@ -241,3 +241,8 @@ metadata:
 ```
 kubectl apply -f v2_2_1_full.yaml
 ```
+
+#### Check that the deployment is successed
+```
+kubectl get deployment -n kube-system aws-load-balancer-controller
+```
