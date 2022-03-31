@@ -246,3 +246,8 @@ kubectl apply -f v2_2_1_full.yaml
 ```
 kubectl get deployment -n kube-system aws-load-balancer-controller
 ```
+
+#### Check that service account has been created
+```
+kubectl get sa aws-load-balancer-controller -n kube-system -o yaml
+```
