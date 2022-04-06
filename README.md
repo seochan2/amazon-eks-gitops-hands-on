@@ -251,3 +251,10 @@ kubectl get deployment -n kube-system aws-load-balancer-controller
 ```
 kubectl get sa aws-load-balancer-controller -n kube-system -o yaml
 ```
+
+## Deploy Microservices
+### Deploy First Backend Service
+#### Move on to manifests folder(/home/ec2-user/environment/manifests)
+```
+cd ~/environment/manifests/
+```
