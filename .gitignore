@@ -1,0 +1,67 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Exclude sensitive files containing credentials, secrets, and API keys
+*.pem
+*.key
+*.pub
+*.p12
+*.gpg
+*.jks
+*.json
+*.pem
+*.pfx
+*.cer
+*.pem
+*.pem.key
+
+# Exclude provider-specific files and directories
+/.terraform.lock.hcl
+/.terraform.cache
+
+.terraform.lock.hcl
