@@ -1,2 +1,2 @@
-# Provisioning an Amazon EKS with Terraform and GitOps
-### Deploy an EKS cluster using Terraform and using Argo CD for GitOps continuous delivery implementation
+# AWS EKS 기반의 GitOps 구축 및 배포 실습
+
