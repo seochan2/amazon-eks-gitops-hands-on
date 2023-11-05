@@ -2,10 +2,10 @@
 ### 3.1 Git 설정
 - Global 변수 설정
 ```
-git config --global user.name "seokchan.park"
+git config --global user.name "<Name>"
 ```
 ```
-git config --global user.email "seokchan.park@samsung.com"
+git config --global user.email "<Email>"
 ```
 - 확인
 ```
