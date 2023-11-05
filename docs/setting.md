@@ -58,7 +58,7 @@ rm -vf ${HOME}/.aws/credentials
 aws sts get-caller-identity --query Arn | grep eks-workspace-admin-<닉네임>
 ```
 - 결과 예시   
-`arn:aws:sts::876630244803:assumed-role/eksworkspace-admin-scp/i-03e9af70279e891de`
+`arn:aws:sts::xxxxxxxxxxxx:assumed-role/eksworkspace-admin-scp/i-03e9axxxxxxxxxxxx`
 
 
 ### 1.2 AWS CLI
